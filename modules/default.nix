@@ -4,11 +4,13 @@ with lib;
 
 let
   userConfiguration = mkOption {
-    options = {
-      programs = mkOption {
-        type = types.submodule (import ./programs);
-        default = {};
-        description = "Program configurations for ${username}";
+    type = types.attrsOf (types.submodule) {
+      options = {
+        programs = mkOption {
+          type = types.submodule (import ./programs);
+          default = {};
+          description = "Program configurations for ${username}";
+        };
       };
     };
     default = {};
