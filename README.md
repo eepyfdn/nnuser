@@ -2,10 +2,6 @@
 
 Truly declarative userspace management with Nix
 
-## Approach
-
-Instead of modifying the home directory directly like [home-manager](https://github.com/nix-community/home-manager), nnuser manages state by using an [overlayfs](https://wikipedia.org/wiki/OverlayFS), essentially the lower layer of the file system is the read-only directory within the Nix Store containing the declaratively configured files and then the upper layer is the user's real home directory meaning you get a perfect balance of both usability and reproducability.
-
 ## Installation
 
 ### Install via Flakes
