@@ -1,0 +1,29 @@
+{
+  "nodes": {
+    "root": {
+      "inputs": {
+        "wrapper-manager": "wrapper-manager"
+      }
+    },
+    "wrapper-manager": {
+      "inputs": {
+        "nixpkgs": []
+      },
+      "locked": {
+        "lastModified": 1724503599,
+        "narHash": "sha256-WVhNq3QjnG/2mi772CkTxZCQcomKV5S03TbQKwe1Kj4=",
+        "owner": "viperML",
+        "repo": "wrapper-manager",
+        "rev": "c936f9203217e654a6074d206505c16432edbc70",
+        "type": "github"
+      },
+      "original": {
+        "owner": "viperML",
+        "repo": "wrapper-manager",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
